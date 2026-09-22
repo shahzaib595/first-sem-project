@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shop — Bronx Luggage</title>
+<meta name="description" content="Browse and filter suitcases, briefcases, backpacks and travel accessories from Samsonite, Tumi, Away, Travelpro, Delsey and American Tourister.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B3%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body data-page="shop">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand" aria-label="Bronx Luggage home">
+      <span class="brand-mark"><i class="fa-solid fa-suitcase-rolling"></i></span>
+      <span>
+        <span class="brand-name">Bronx</span>
+        <span class="brand-sub">LUGGAGE CO.</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Main navigation">
+      <a href="index.html" class="nav-item">Home</a>
+      <a href="shop.html" class="nav-item is-active" aria-current="page">Shop</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="visits-pill">
+        <span class="dot-ping"></span>
+        <span>Visits:</span>
+        <strong data-visitor-count>1,420</strong>
+      </div>
+      <button type="button" class="menu-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu"><i class="fa-solid fa-bars" id="menu-icon"></i></button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class="">Home</a>
+    <a href="shop.html" class=" is-active" aria-current="page">Shop</a>
+    <a href="gallery.html" class="">Gallery</a>
+    <a href="about.html" class="">About</a>
+    <a href="contact.html" class="">Contact</a>
+    <div class="mobile-visits">
+      <span>Simulated visitor count</span>
+      <strong data-visitor-count>1,420</strong>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="page-hero">
+    <div class="wrap">
+      <nav class="breadcrumb" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> <i class="fa-solid fa-chevron-right"></i> <span>Shop</span>
+      </nav>
+      <h1>Find your next bag</h1>
+      <p>Filter by keyword, category, brand or budget — every result updates instantly, right in your browser.</p>
+    </div>
+  </section>
+
+  <section class="section" style="padding-top:56px;">
+    <div class="wrap">
+      <div class="filter-card">
+        <div class="filter-grid">
+          <div class="field">
+            <label for="search-input">Search keyword</label>
+            <div class="input-wrap">
+              <i class="fa-solid fa-magnifying-glass"></i>
+              <input type="text" id="search-input" placeholder="Leather, TSA, spinner…" autocomplete="off">
+            </div>
+          </div>
+
+          <div class="field">
+            <label for="category-filter">Category</label>
+            <select id="category-filter">
+              <option value="all">All categories</option>
+              <option value="Luggage">Luggage &amp; spinners</option>
+              <option value="Bags">Bags &amp; duffles</option>
+              <option value="Backpacks">Backpacks</option>
+              <option value="Briefcases">Briefcases</option>
+              <option value="Accessories">Travel accessories</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <label for="brand-filter">Brand</label>
+            <select id="brand-filter">
+              <option value="all">All brands</option>
+              <option value="Samsonite">Samsonite</option>
+              <option value="Tumi">Tumi</option>
+              <option value="Away">Away</option>
+              <option value="Travelpro">Travelpro</option>
+              <option value="Delsey">Delsey</option>
+              <option value="American Tourister">American Tourister</option>
+            </select>
+          </div>
+
+          <div class="field">
+            <div class="price-head"><label for="price-range">Max price</label><span id="price-value-display">$500</span></div>
+            <input type="range" id="price-range" min="30" max="500" step="10" value="500">
+          </div>
+        </div>
+
+        <div class="filter-bottom">
+          <div class="gender-group">
+            <span class="group-label">Target:</span>
+            <button type="button" class="gender-tab is-active" data-gender="all" aria-pressed="true">All</button>
+            <button type="button" class="gender-tab" data-gender="Men" aria-pressed="false">Men</button>
+            <button type="button" class="gender-tab" data-gender="Women" aria-pressed="false">Women</button>
+            <button type="button" class="gender-tab" data-gender="Unisex" aria-pressed="false">Unisex</button>
+          </div>
+          <button type="button" class="reset-link" data-reset-filters><i class="fa-solid fa-rotate-left"></i> Reset filters</button>
+        </div>
+      </div>
+
+      <p class="result-count" id="result-count" aria-live="polite"></p>
+
+      <div id="product-grid-container" class="product-grid"></div>
+
+      <div id="no-results-box" class="no-results hidden">
+        <i class="fa-solid fa-suitcase"></i>
+        <h3>No products match your filters</h3>
+        <p>Try resetting your search or widening the price range.</p>
+        <button type="button" class="btn btn-brass btn-sm" data-reset-filters style="margin-top:16px;">Reset all filters</button>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER + SITE MAP -->
+<section class="footer-sitemap" id="sitemap" aria-label="Site map">
+  <div class="wrap">
+    <h3>Site map</h3>
+    <div class="sitemap-grid">
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About the store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="shop.html?category=Luggage">Luggage &amp; spinners</a></li>
+          <li><a href="shop.html?category=Bags">Bags &amp; duffles</a></li>
+          <li><a href="shop.html?category=Backpacks">Backpacks</a></li>
+          <li><a href="shop.html?category=Briefcases">Briefcases</a></li>
+          <li><a href="shop.html?category=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop by target</h4>
+        <ul>
+          <li><a href="shop.html?gender=Men">Men's travel line</a></li>
+          <li><a href="shop.html?gender=Women">Women's travel line</a></li>
+          <li><a href="shop.html?gender=Unisex">Unisex</a></li>
+          <li><a href="index.html#brands">Featured brands</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support &amp; feedback</h4>
+        <ul>
+          <li><a href="gallery.html">Photo gallery</a></li>
+          <li><a href="contact.html#feedback">Feedback form</a></li>
+          <li><a href="contact.html#contact">Contact details</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer-bar">
+  <div class="wrap foot-row">
+    <p>&copy; 2026 Bronx Luggage &mdash; Festival Marketplace. Static site.</p>
+    <a href="#main">Top of page <i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-left">
+    <span class="live-chip"><i class="fa-solid fa-circle"></i> LIVE</span>
+    <span class="ticker-text">
+      Festival Marketplace Store<span class="sep">&bull;</span><span id="ticker-clock">Updating time…</span><span class="sep">&bull;</span><span id="ticker-geo"><i class="fa-solid fa-location-crosshairs"></i> Detecting location…</span>
+    </span>
+  </div>
+
+</div>
+
+<!-- PRODUCT MODAL -->
+<div id="product-modal" class="overlay hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+  <div class="modal-box">
+    <button type="button" class="modal-close" id="modal-close-btn" aria-label="Close"><i class="fa-solid fa-xmark"></i></button>
+    <div class="modal-inner">
+      <div class="modal-flex">
+        <img id="modal-image" alt="">
+        <div class="modal-col">
+          <div>
+            <span class="brand-tag" id="modal-brand">Brand</span>
+            <h3 id="modal-title">Title</h3>
+            <p class="price" id="modal-price">$0</p>
+            <p class="spec-line" id="modal-specs">Specifications…</p>
+          </div>
+          <div class="modal-rate">
+            <span class="rate-label">Your rating</span>
+            <div class="modal-stars" id="modal-star-rating"></div>
+            <p class="hint">Saved instantly in your browser.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden" role="status" aria-live="polite">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toast-message">Notification message</span>
+</div>
+
+</body>
+</html>

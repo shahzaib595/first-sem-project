@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bronx Luggage — Festival Marketplace</title>
+<meta name="description" content="Bronx Luggage: premium suitcases, briefcases, backpacks and travel accessories at Festival Marketplace.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E%F0%9F%A7%B3%3C/text%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Work+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<link rel="stylesheet" href="css/style.css">
+<script src="js/script.js"></script>
+</head>
+<body data-page="home">
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a href="index.html" class="brand" aria-label="Bronx Luggage home">
+      <span class="brand-mark"><i class="fa-solid fa-suitcase-rolling"></i></span>
+      <span>
+        <span class="brand-name">Bronx</span>
+        <span class="brand-sub">LUGGAGE CO.</span>
+      </span>
+    </a>
+
+    <nav class="primary" aria-label="Main navigation">
+      <a href="index.html" class="nav-item is-active" aria-current="page">Home</a>
+      <a href="shop.html" class="nav-item">Shop</a>
+      <a href="gallery.html" class="nav-item">Gallery</a>
+      <a href="about.html" class="nav-item">About</a>
+      <a href="contact.html" class="nav-item">Contact</a>
+    </nav>
+
+    <div class="nav-right">
+      <div class="visits-pill">
+        <span class="dot-ping"></span>
+        <span>Visits:</span>
+        <strong data-visitor-count>1,420</strong>
+      </div>
+      <button type="button" class="menu-toggle" id="mobile-toggle-btn" aria-label="Toggle navigation" aria-expanded="false" aria-controls="mobile-menu"><i class="fa-solid fa-bars" id="menu-icon"></i></button>
+    </div>
+  </div>
+
+  <div class="mobile-menu" id="mobile-menu">
+    <a href="index.html" class=" is-active" aria-current="page">Home</a>
+    <a href="shop.html" class="">Shop</a>
+    <a href="gallery.html" class="">Gallery</a>
+    <a href="about.html" class="">About</a>
+    <a href="contact.html" class="">Contact</a>
+    <div class="mobile-visits">
+      <span>Simulated visitor count</span>
+      <strong data-visitor-count>1,420</strong>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div>
+        <h1>Gear built for the <em>next departure.</em></h1>
+        <p class="lede">Hardshell spinners, full-grain briefcases and trail-ready packs — hand-picked at Festival Marketplace and backed by full manufacturer warranties.</p>
+        <div class="hero-ctas">
+          <a href="shop.html" class="btn btn-brass"><i class="fa-solid fa-bag-shopping"></i> Browse the catalog</a>
+          <a href="about.html" class="btn btn-ink"><i class="fa-solid fa-location-dot"></i> Visit the store</a>
+        </div>
+
+        <div class="quicklinks">
+          <a class="quicklink" href="shop.html?category=Luggage">
+            <i class="fa-solid fa-suitcase-rolling"></i>
+            <h4>Luggage</h4><span>Spinners &amp; carry-ons</span>
+          </a>
+          <a class="quicklink" href="shop.html?category=Backpacks">
+            <i class="fa-solid fa-person-hiking"></i>
+            <h4>Backpacks</h4><span>Tech &amp; hiking packs</span>
+          </a>
+          <a class="quicklink" href="shop.html?category=Briefcases">
+            <i class="fa-solid fa-briefcase"></i>
+            <h4>Briefcases</h4><span>Leather executive</span>
+          </a>
+          <a class="quicklink" href="shop.html?category=Accessories">
+            <i class="fa-solid fa-compass"></i>
+            <h4>Accessories</h4><span>TSA locks &amp; organizers</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="tag-stage" aria-hidden="true">
+        <div class="tag-string"></div>
+        <div class="tag">
+          <span class="tag-hole"></span>
+          <span class="tag-eyebrow">Claim tag no. 104</span>
+          <h3>Bronx</h3>
+          <span class="tag-line2">Luggage Co. — Est. Festival Marketplace</span>
+          <span class="tag-stamp"><i class="fa-solid fa-stamp"></i> Authorized retailer</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="featured" class="section">
+    <div class="wrap">
+      <div class="head-row" data-reveal>
+        <div class="section-head">
+          <div class="rule"></div>
+          <h2>Top-rated picks</h2>
+          <p>The four highest-rated bags in our catalog right now.</p>
+        </div>
+        <a href="shop.html" class="text-link">View all products <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+      <div id="featured-grid" class="product-grid"></div>
+    </div>
+  </section>
+
+  <section id="men-women" class="section section-white">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div class="rule"></div>
+        <h2>Built around how you pack</h2>
+        <p>Two curated lines — rugged executive gear and lightweight travel essentials.</p>
+      </div>
+
+      <div class="mw-grid">
+        <div class="mw-card">
+          <img src="https://images.unsplash.com/photo-1507679799987-c73779587ccf?auto=format&fit=crop&w=800&q=80" alt="Men's travel gear" loading="lazy" data-fallback="Men Collection">
+          <div class="mw-content">
+            <span class="mw-tag men">Executive &amp; rugged</span>
+            <h3>Men's travel line</h3>
+            <p>Ballistic-nylon briefcases, expandable spinners and tech-ready packs.</p>
+            <a class="mw-link" href="shop.html?gender=Men">Shop men's <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+
+        <div class="mw-card">
+          <img src="https://images.unsplash.com/photo-1553062407-98eeb64c6a62?auto=format&fit=crop&w=800&q=80" alt="Women's travel gear" loading="lazy" data-fallback="Women Collection">
+          <div class="mw-content">
+            <span class="mw-tag women">Lightweight &amp; elegant</span>
+            <h3>Women's travel line</h3>
+            <p>Pastel hardshell carry-ons, weekend duffles and organizer totes.</p>
+            <a class="mw-link" href="shop.html?gender=Women">Shop women's <i class="fa-solid fa-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="brands" class="section">
+    <div class="wrap">
+      <div class="section-head" data-reveal>
+        <div class="rule"></div>
+        <h2>Featured brands</h2>
+        <p>Authentic products, every one backed by full manufacturer warranty. Pick a brand to see its bags.</p>
+      </div>
+      <div class="brand-grid" id="brands-grid"></div>
+    </div>
+  </section>
+
+  <section class="cta-band">
+    <div class="wrap cta-inner">
+      <div>
+        <h2>Ready for your next trip?</h2>
+        <p>Browse the full catalog or stop by Suite 104 in the Main Atrium — we'll help you pick the right bag.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="shop.html" class="btn btn-brass"><i class="fa-solid fa-bag-shopping"></i> Browse the catalog</a>
+        <a href="contact.html" class="btn btn-outline"><i class="fa-solid fa-envelope"></i> Contact us</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- FOOTER + SITE MAP -->
+<section class="footer-sitemap" id="sitemap" aria-label="Site map">
+  <div class="wrap">
+    <h3>Site map</h3>
+    <div class="sitemap-grid">
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="shop.html">Shop</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="about.html">About the store</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Categories</h4>
+        <ul>
+          <li><a href="shop.html?category=Luggage">Luggage &amp; spinners</a></li>
+          <li><a href="shop.html?category=Bags">Bags &amp; duffles</a></li>
+          <li><a href="shop.html?category=Backpacks">Backpacks</a></li>
+          <li><a href="shop.html?category=Briefcases">Briefcases</a></li>
+          <li><a href="shop.html?category=Accessories">Accessories</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Shop by target</h4>
+        <ul>
+          <li><a href="shop.html?gender=Men">Men's travel line</a></li>
+          <li><a href="shop.html?gender=Women">Women's travel line</a></li>
+          <li><a href="shop.html?gender=Unisex">Unisex</a></li>
+          <li><a href="index.html#brands">Featured brands</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Support &amp; feedback</h4>
+        <ul>
+          <li><a href="gallery.html">Photo gallery</a></li>
+          <li><a href="contact.html#feedback">Feedback form</a></li>
+          <li><a href="contact.html#contact">Contact details</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer-bar">
+  <div class="wrap foot-row">
+    <p>&copy; 2026 Bronx Luggage &mdash; Festival Marketplace. Static site.</p>
+    <a href="#main">Top of page <i class="fa-solid fa-arrow-up"></i></a>
+  </div>
+</footer>
+
+<!-- TICKER -->
+<div class="ticker">
+  <div class="ticker-left">
+    <span class="live-chip"><i class="fa-solid fa-circle"></i> LIVE</span>
+    <span class="ticker-text">
+      Festival Marketplace Store<span class="sep">&bull;</span><span id="ticker-clock">Updating time…</span><span class="sep">&bull;</span><span id="ticker-geo"><i class="fa-solid fa-location-crosshairs"></i> Detecting location…</span>
+    </span>
+  </div>
+
+</div>
+
+<!-- TOAST -->
+<div id="toast" class="toast hidden" role="status" aria-live="polite">
+  <i class="fa-solid fa-circle-check"></i>
+  <span id="toast-message">Notification message</span>
+</div>
+
+</body>
+</html>
